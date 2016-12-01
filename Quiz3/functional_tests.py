@@ -29,14 +29,33 @@ class NewVisitorTest(unittest.TestCase):
 	
 	To this web site, do the following: 
 
-	1. Add a test for a title on the home page and then add the title
-	2. Add a test for an image of your choice and then insert the image into the home page. 
-	3. Add a test for a clickable area on the image then add the clickable image area
-	4. Add a test for the result of clicking on the image area (the new page) then add the web page to make it pass
-	5. Test for a header on the new page and then add the header. 
+	1. Add a test for a page title on the home page and then add the title
+	2. Add a test for an h1 type heading on the home page and then add the heading
+	3. Add a test for an image of your choice and then insert the image into the home page. 
+	4. Add a test for a clickable area on the image then add the clickable image area going
+	   to the web page called "newpage.html"
+	5. Add a test for the result of clicking on the image area (the new page)
+	   then add the web page called "newpage.html" to make it pass
+	6. Test for a header on the new page and then add the header. 
+
+	When you are done, do the following:
+	    Create a repository in your github account called Quiz3
+	    Remove the .git directory from your cloned Quiz3
+	    type
+	        git init .
+	    in the same directory that you removed .git
+	    type
+	        git add .
+	    type
+	        git commit -a -m "my submission" 
+	    follow the instructions on github to push your work to your Quiz3
+	    
+	    Make sure you have pushed your work by typing
+	        git push
 
         """
 
+	# here is the first test (for free) 
         self.browser.get('http://localhost:8000/index.html')
 
 if __name__=="__main__":
